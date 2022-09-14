@@ -296,13 +296,13 @@ impl Dialogue {
         for caps in re.captures_iter(&line.info) {
             let word = caps.get(0).unwrap().as_str();
             if let Some(val) = self.vars.get(&word[2..]) {
-                result.info = line.info.replace(word, val);
+                result.info = result.info.replace(word, val);
             }
         }
         for caps in re.captures_iter(&line.cont) {
             let word = caps.get(0).unwrap().as_str();
             if let Some(val) = self.vars.get(&word[2..]) {
-                result.cont = line.cont.replace(word, val);
+                result.cont = result.cont.replace(word, val);
             }
         }
         result
