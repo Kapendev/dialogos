@@ -1,7 +1,13 @@
 [package]
 name = "dialogos"
+description = "A super simple dialogue system for Rust."
+readme = "README.md"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+repository = "https://github.com/AlexandrosKap/dialogos/"
+categories = ["game-development"]
+keywords = ["game", "gamedev", "dialog", "dialogue"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
