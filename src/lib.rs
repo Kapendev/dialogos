@@ -235,6 +235,21 @@ impl Dialogue {
         }
     }
 
+    /// Returns the index of the dialogue.
+    pub fn idx(&self) -> usize {
+        self.idx
+    }
+
+    /// Returns the lines of the dialogue.
+    pub fn lines(&self) -> &Vec<Line> {
+        &self.lines
+    }
+
+    /// Returns the labels of the dialogue.
+    pub fn labels(&self) -> &HashMap<String, usize> {
+        &self.labels
+    }
+
     /// Returns true if the current line is an end line.
     pub fn has_end(&self) -> bool {
         self.lines[self.idx].t == LineType::End
